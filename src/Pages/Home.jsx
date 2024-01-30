@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Card from '../Components/Card';
 import PokemonTeam from './PokemonTeam';
+import pokemon from '../img/pokemon.png'
 
 const Home = () => {
   
@@ -49,7 +50,11 @@ const Home = () => {
 
   return (
     <div>
-      <h1>POKEMÓN</h1>
+    <div className="flex items-center justify-center">
+      <img src={pokemon} alt='pokemon' className=" w-2/3 h-auto py-5" />
+    </div>
+      
+    <div className="flex flex-wrap justify-around" style={{backgroundColor: '#0c1c3e'}}>
       {pokemonesDetails && pokemonesDetails.map((pokemon) => {
         return <div key ={pokemon.id}>
           <Card props={pokemon} setPokemonSelected={setPokemonSelected}/>
@@ -57,6 +62,8 @@ const Home = () => {
                
       })}
 
+    </div>
+      
 
        
       
