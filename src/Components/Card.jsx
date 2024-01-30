@@ -15,7 +15,7 @@ const Card = ({props, setPokemonSelected}) => {
 
   return (
     <div className="">
-      <div className=" p-5 h-96 w-64 bg-white m-10 rounded-xl">
+      <div className="p-5 h-96 w-64 bg-white m-10 rounded-xl">
         <img src={props.sprites.other['official-artwork'].front_default} alt="" className=" w-56 h-auto" />
         <div className="flex flex-col justify-center items-center">
           <h4 className="text-xl my-5"> {props.name.charAt(0).toUpperCase() + props.name.slice(1)} </h4>

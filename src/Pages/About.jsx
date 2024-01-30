@@ -1,13 +1,14 @@
 import React from 'react'
+import aboutimg from '../img/about.png'
 
 const About = () => {
   return (
     <div>
-        <h1> About This Project </h1>
+        <div className="flex justify-center items-center">
+          <img src={aboutimg} alt='About Image'/>
+        </div>
 
-        <img src="" alt="Imagen bienvenida" />
-
-        <p> Welcome to this exciting project, crafted with the versatile React library and powered by Vite. This initiative reflects the synthesis of knowledge 
+        <p className="m-20 text-lg"> Welcome to this exciting project, crafted with the versatile React library and powered by Vite. This initiative reflects the synthesis of knowledge 
         
         I've acquired during my journey in web development. At its core, it encapsulates fundamental React concepts, from building robust components to the expert 
         

@@ -15,6 +15,7 @@ const PokemonDetail = () => {
         axios(url)
         .then((resp) => {
             console.log(resp.data);
+            console.log('----resp data ----');
             setIndividualPokemon(resp.data);
         })
     }, [])
@@ -32,7 +33,7 @@ const PokemonDetail = () => {
     console.log(individualPokemon.effect_entries);
     console.log(imgPokemon);
   return (
-    <div>
+    <div className="flex justify-center items-center">
        {individualPokemon && Object.keys(individualPokemon).length > 0 && Object.keys(imgPokemon).length > 0 && (
        <CardDetails key={individualPokemon} props1={individualPokemon} props2={imgPokemon}/>
         )} 
