@@ -5,11 +5,16 @@ import pokebola from '../img/pokebola.png'
 
 const Navbar = () => {
   const navigate = useNavigate();
+
+  function irAHome() {
+    navigate(-1);
+  }
+
   return (
     <div style={{backgroundColor: '#0f224a'}} >
       <div className="flex items-center justify-between mx-auto max-w-screen-lg py-10 text-lg text-white">
-        <div className="flex items-center">
-          <img src={pokebola} alt='pokebola' className="h-10 w-10 mx-4 " /> 
+        <div  onClick={irAHome} className="flex items-center cursor-pointer">
+          <img src={pokebola} alt='pokebola' className="h-10 w-10 mx-4" /> 
         </div>
         <div className="flex items-center justify-center flex-grow">
           <Link to = '/' className="mx-10"> <h4>Home</h4></Link>

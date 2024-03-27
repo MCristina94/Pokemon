@@ -76,9 +76,3 @@ const Home = () => {
 
 export default Home
 
-/* {pokemonesDetails && pokemonesDetails.map((pokemon) => {
-        return <div>
-          <PokemonTeam key={pokemon.id} props={pokemon} />
-        </div>
-               
-      })}*/

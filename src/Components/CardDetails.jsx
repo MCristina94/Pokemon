@@ -21,8 +21,3 @@ function CardDetails({props1,props2}) {
 }
 
 export default CardDetails
-
-//
-/*if (!pokemon || Object.keys(pokemon).length === 0) {
-        return <div>Loading...</div>; 
-    }*/
